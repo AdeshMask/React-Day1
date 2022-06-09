@@ -4,11 +4,11 @@ import './App.css';
 
 class App extends React.Component {
 
-  url = 'https://github.com/AdeshMask'
+  url = 'https://www.google.com'
   constructor() {
     super()
     this.state ={
-      title: 'Hello From Bridgelabz'
+      userName: ''
     }
   }
 
@@ -18,13 +18,23 @@ class App extends React.Component {
     window.open(this.url, "_blank");
   }
 
+  onNameChange = (event) => {
+    console.log('value is', event.target.value);
+    this.setState({userName: event.target.value});
+  }
+
   render(){
     return (
-      <div>
-        <h1>{this.state.title}</h1>
+      <>
+      <div className="App">
+        <h1>Hello {this.state.userName} From Bridgelabz</h1>
         <img src={logo} onClick={this.onClick} 
         className="App-logo" alt="logo" />
       </div>
+      <div className="App">
+        <br/><input onChange={this.onNameChange}/>
+        </div>
+      </>
     )
   }
 }
