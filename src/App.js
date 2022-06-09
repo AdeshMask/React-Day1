@@ -1,4 +1,4 @@
-// import logo from './logo.svg';
+import logo from './logo.svg';
 import React from 'react';
 import './App.css';
 
@@ -13,6 +13,7 @@ class App extends React.Component {
     return (
       <div>
         <h1>{this.state.title}</h1>
+        <img src={logo} className="App-logo" alt="logo" />
       </div>
     )
   }
