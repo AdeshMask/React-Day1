@@ -18,33 +18,23 @@ h1 {
   font-style: italic;
   color: red;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+  background-color: rgb(26, 23, 215);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+  width: 650px;
+  margin: 0 auto;
+  background-color: rgb(225, 137, 5);
+  padding: 0 20px 20px 20px;
+  border: 5px solid;
+}
+p,li {
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.5;
+  letter-spacing: 0.75px;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/*-------------------------------------------------------------------------------------------------------*/
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

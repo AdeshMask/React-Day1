@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './assests/bridgelabz-logo.png';
 import React from 'react';
 import './App.css';
 
@@ -41,31 +41,20 @@ class App extends React.Component {
         <br/><input onChange={this.onNameChange}/>
         <span className="error-output">{this.state.nameError}</span>
         </div>
+        <p>At Bridgelabz we are a Community of</p>
+	  <ul>
+	    <li>Technologists</li>
+	    <li>Thinkers</li> 
+	    <li>Builders</li> 
+     </ul>
+       <p>Working together to keep the employability of Engineers alive and accessible, so Tech Companies worldwide can get contributors and creators for technology Solutions. We belive this act of human collaboration across an employability platfor is essential to individual growth and our collevtive future.</p>
+			 <p>To know more about us, visit <a href="https://www.bridgelabz.com/">Bridgelabz</a> to learn even more about out mission</p>
+	     <p><strong>i.e Employability to all</strong></p>
+			 
       </>
     )
   }
 }
 
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Welcome to Reactjs !!!!!
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
 
 export default App;
